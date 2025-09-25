@@ -1,5 +1,14 @@
 function indexOfIgnoreCase(s1, s2) {
   // write your code here
+	s1=s1.toLowercase();
+	s2=s2.toLowercase();
+	for(let i=0;i<s1.length;i++){
+       if(s1.charAt(i)==s2.charAt(0)){
+		   return i;
+	   }
+	}
+	return -1;
+	
 }
 
 // Please do not change the code below
